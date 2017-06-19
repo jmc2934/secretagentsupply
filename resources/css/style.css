@@ -1,10 +1,12 @@
 body {
   font-size: 18px;
   font-family: helvetica;
+  color: white;
 }
 .container {
   margin: 0 auto;
   width: 960px;
+  display: flex;
 }
 header {
   display: flex;
@@ -19,33 +21,99 @@ header .logo span {
 }
 header .logo img {
   height: 1.5em;
-  padding-left: 1rem;
   padding-top: .66rem;
 }
 .main {
+  display: flex;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   height: 25rem;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
 }
 .banner {
-  display: flex;
+  display: block;
   background-color: black;
-  padding-top: 9rem;
-  align-items: flex-start;
   width: 20rem;
+  height: 8rem;
+  padding: 2rem 3rem;
+  margin: 9rem;
 }
 .banner h4 {
   color: white;
   font-weight: bold;
   font-size: 1rem;
+  padding-bottom: 1rem;
   padding-top: 2rem;
-  padding-bottom: 0.25rem;
-  padding-left: 3rem;
 }
 .banner h1 {
   font-size: 2rem;
   font-weight: bold;
   color: white;
-  padding-right: 3rem;
+}
+.menu {
+  display: block;
+  color: white;
+  background-color: firebrick;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+}
+.menu .menu-items {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 960px;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+  width: 960px;
+}
+.product {
+  width: 30%;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.product-image {
+  border: 4px solid black;
+  padding: 2em 4em;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image img {
+  max-width: 8em;
+}
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+.location {
+  width: 35%;
+  margin 0 auto;
+}
+.location-hours {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+.location-hours h2 {
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 24rem;
+}
+.location-hours p {
+  color: black;
+  padding-top: .25rem;
+}
+.hours {
+  width: 35%;
 }
